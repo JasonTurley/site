@@ -1,0 +1,45 @@
+html {
+    background: rgb(240, 212, 209);
+    
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0 30px;
+    line-height: 1.8em;
+    letter-spacing: -0.01em;
+    font-family: monospace, 'Courier New', Courier;
+    font-size: 16px;
+    word-wrap: break-word;
+    min-height: 100vh;
+}
+
+h1,
+h2 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+
+/*
+ * Classes
+ */
+ .title {
+     display: flex;
+     align-content: center;
+ }
+
+.small {
+    font-size: 0.85em;
+}
+
+.list {
+     
+}
