@@ -16,6 +16,10 @@ body {
     min-height: 100vh;
 }
 
+p {
+    word-wrap: break-word;
+}
+
 h1,
 h2 {
     font-size: 25px;
@@ -25,21 +29,6 @@ h2 {
 a:hover,
 a:focus {
     text-decoration: none;
-}
-
-
-/*
- * Classes
- */
- .title {
-     display: flex;
-     align-content: center;
- }
-
-.small {
-    font-size: 0.85em;
-}
-
-.list {
-     
+    transition: all ease-in-out 250ms;
+    font-weight: bold;
 }
