@@ -1,5 +1,5 @@
 var darkMode = document.getElementById('dark-mode');
-var darkModeOn = false;
+var darkModeOn = false; 
 
 darkMode.onclick = function() {
     if (darkModeOn === false) {
