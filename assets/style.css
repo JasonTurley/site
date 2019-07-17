@@ -1,9 +1,5 @@
-html {
-    background: rgb(240, 212, 209);
-    
-}
-
 body {
+    background: rgb(240, 212, 209);
     display: flex;
     flex-direction: column;
     padding: 0;

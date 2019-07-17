@@ -1,5 +1,16 @@
 var darkMode = document.getElementById('dark-mode');
+var darkModeOn = false;
 
 darkMode.onclick = function() {
-    alert('This feature is still under construction');
+    if (darkModeOn === false) {
+        // Turn dark mode on
+        document.body.style.backgroundColor = 'black';
+        document.body.style.color = 'white';
+        darkModeOn = true;
+    } else {
+        // Turn dark mode off
+        document.body.style.backgroundColor = 'rgb(240, 212, 209)';
+        document.body.style.color = 'black';
+        darkModeOn = false;
+    }
 }
