@@ -1,9 +1,7 @@
 body {
     background: rgb(240, 212, 209);
     display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0 30px;
+    flex: 1 1 auto;
     line-height: 1.8em;
     letter-spacing: -0.01em;
     font-family: monospace, 'Courier New', Courier;
@@ -16,10 +14,15 @@ p {
     word-wrap: break-word;
 }
 
-h1,
-h2 {
+h1 {
     font-size: 25px;
     font-weight: 600;
+    text-align: center;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: -10px;
 }
 
 a:hover,
@@ -27,4 +30,26 @@ a:focus {
     text-decoration: none;
     transition: all ease-in-out 250ms;
     font-weight: bold;
+}
+
+.wrapper {
+    padding: 0 2em;
+}
+
+/* Customize the dark mode label */
+#dark-mode {
+    display: block;
+    position: relative;
+    padding-left: 50px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #2196F3;
 }
