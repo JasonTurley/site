@@ -1,3 +1,4 @@
+/* This applies from 0px to 600px */
 body {
     background: rgb(240, 212, 209);
     display: flex;
@@ -5,9 +6,16 @@ body {
     line-height: 1.8em;
     letter-spacing: -0.01em;
     font-family: monospace, 'Courier New', Courier;
-    font-size: 16px;
+    font-size: 12px;
     word-wrap: break-word;
     min-height: 100vh;
+}
+
+/* Applies from 600px onwards*/
+@media screen and (min-width: 600px) {
+    body {
+        font-size: 16px;
+    }
 }
 
 p {
@@ -15,14 +23,26 @@ p {
 }
 
 h1 {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
     text-align: center;
 }
 
+@media screen and (min-width: 600px) {
+    h1 {
+        font-size: 30px;
+    }
+}
+
 h3 {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: -10px;
+}
+
+@media screen and (min-width: 600px) {
+    h3 {
+        font-size: 24px;
+    }
 }
 
 a:hover,
@@ -37,7 +57,7 @@ a:focus {
 }
 
 /* Customize the dark mode label */
-#dark-mode {
+#dark-mode-button {
     display: block;
     position: relative;
     padding-left: 50px;
