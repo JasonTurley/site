@@ -1,4 +1,4 @@
-var darkMode = document.getElementById('dark-mode');
+var darkMode = document.getElementById('dark-mode-button');
 var darkModeOn = false; 
 
 darkMode.onclick = function() {
