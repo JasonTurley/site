@@ -57,7 +57,7 @@ a:focus {
 }
 
 /* Customize the dark mode label */
-#dark-mode-button {
+label {
     display: block;
     position: relative;
     padding-left: 50px;
